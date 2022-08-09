@@ -4,7 +4,7 @@
 
 PHASE1=pot20_final.ptau
 BUILD_DIR=./build
-CIRCUIT_NAME=multiplier
+CIRCUIT_NAME=multiplier2
 PROOF_JSON_FILE=proof.json
 PUBLIC_JSON_FILE=public.json
 SMART_CONTRACT=verifier.sol

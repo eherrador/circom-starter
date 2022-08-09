@@ -7,13 +7,13 @@ async function run() {
     //run any of the next lines after you run: sh build_multiplier_option_2.sh
 
     //success proof
-    const { proof, publicSignals } = await snarkjs.groth16.fullProve({a: 10, b: 21}, "../build/multiplier_js/multiplier.wasm", "../build/multiplier_final.zkey");
+    //const { proof, publicSignals } = await snarkjs.groth16.fullProve({a: 10, b: 21}, "../build/multiplier2_js/multiplier2.wasm", "../build/multiplier2_final.zkey");
     
     //wrong proof
-    //const { proof, publicSignals } = await snarkjs.groth16.fullProve({a: 1, b: 33}, "../build/multiplier_js/multiplier.wasm", "../build/multiplier_final.zkey");
+    //const { proof, publicSignals } = await snarkjs.groth16.fullProve({a: 1, b: 33}, "../build/multiplier2_js/multiplier2.wasm", "../build/multiplier2_final.zkey");
     
     //success proof
-    //const { proof, publicSignals } = await snarkjs.groth16.fullProve({a: 3, b: 11}, "../build/multiplier_js/multiplier.wasm", "../build/multiplier_final.zkey");
+    const { proof, publicSignals } = await snarkjs.groth16.fullProve({a: 3, b: 11}, "../build/multiplier2_js/multiplier2.wasm", "../build/multiplier2_final.zkey");
 
     console.log("Proof: ");
     console.log(JSON.stringify(proof, null, 1));

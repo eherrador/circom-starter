@@ -1,6 +1,12 @@
 # ptau files
 *.ptau
 
+# another several files
+proof.json
+public.json
+package-lock.json
+verifier.sol
+
 # Logs
 logs
 *.log

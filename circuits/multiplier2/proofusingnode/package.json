@@ -12,5 +12,8 @@
     "snarkjs"
   ],
   "author": "Edgar Herrador",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "snarkjs": "^0.4.24"
+  }
 }
