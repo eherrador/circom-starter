@@ -45,6 +45,8 @@ node_modules/
 ./node_modules/
 ./proofusingnode/node/
 jspm_packages/
+build/
+./build/
 
 # TypeScript v1 declaration files
 typings/

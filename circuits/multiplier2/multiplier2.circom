@@ -4,8 +4,8 @@ pragma circom 2.0.0;
 
 template Multiplier2 () {
     // Declaration of signals.
-    signal private input a;
-    signal private input b;
+    signal input a;
+    signal input b;
     signal output c;
     signal inva;
     signal invb;
@@ -16,7 +16,7 @@ template Multiplier2 () {
 
     invb <-- 1/(b-1);
     (b-1)*invb === 1;
-    
+
     c <== a * b;
 }
 

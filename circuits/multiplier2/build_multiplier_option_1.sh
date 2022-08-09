@@ -3,7 +3,7 @@
 #https://github.com/iden3/snarkjs
 
 BUILD_DIR=./build
-CIRCUIT_NAME=multiplier
+CIRCUIT_NAME=multiplier2
 PROOF_JSON_FILE=proof.json
 PUBLIC_JSON_FILE=public.json
 SMART_CONTRACT=verifier.sol
@@ -51,13 +51,13 @@ npx snarkjs r1cs print "$BUILD_DIR"/"$CIRCUIT_NAME".r1cs "$BUILD_DIR"/"$CIRCUIT_
 end=`date +%s`
 echo "DONE ($((end-start))s)"
 
-echo "****GENERATING WITNESS FOR SAMPLE INPUT****"
+echo "****GENERATING WITNESS FOR SAMPLE INPUT - SUCCESSFUL CASE****"
 start=`date +%s`
 node "$BUILD_DIR"/"$CIRCUIT_NAME"_js/generate_witness.js "$BUILD_DIR"/"$CIRCUIT_NAME"_js/"$CIRCUIT_NAME".wasm input_success.json "$BUILD_DIR"/witness.wtns
 end=`date +%s`
 echo "DONE ($((end-start))s)"
 
-echo "****GENERATING WITNESS FOR SAMPLE INPUT****"
+echo "****GENERATING WITNESS FOR SAMPLE INPUT - WRONG CASE****"
 start=`date +%s`
 node "$BUILD_DIR"/"$CIRCUIT_NAME"_js/generate_witness.js "$BUILD_DIR"/"$CIRCUIT_NAME"_js/"$CIRCUIT_NAME".wasm input_wrong.json "$BUILD_DIR"/witness.wtns
 end=`date +%s`
