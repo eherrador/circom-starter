@@ -1,3 +1,6 @@
+# ptau files
+*.ptau
+
 # Logs
 logs
 *.log
@@ -39,6 +42,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+./node_modules/
+./proofusingnode/node/
 jspm_packages/
 
 # TypeScript v1 declaration files
@@ -102,3 +107,9 @@ dist
 
 # TernJS port file
 .tern-port
+circuits/.DS_Store
+circuits/multiplier/.DS_Store
+circuits/multiplier/proof.json
+circuits/multiplier/public.json
+.DS_Store
+circuits/multiplier/verifier.sol
