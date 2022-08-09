@@ -6,4 +6,4 @@ As you can see, this circuit has **two private input** signals named *a*, and *b
 
 The inputs and the outputs are related to each other using the **<==** operator. In circom, the **<==** operator does two things. The first is to connect signals. The second is to apply a constraint.
 
-In our case, we’re using **<==** to connect *c* to *a* and *b* and at the same time constraint *c* to be the value of * a*b *.
+In our case, we’re using **<==** to connect *c* to *a* and *b* and at the same time constraint *c* to be the value of **a*b**.
