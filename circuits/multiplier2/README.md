@@ -20,9 +20,9 @@ npm install -g snarkjs@latest
 
 ## Building keys and witness generation files
 
-Run `sh build_multiplier_option_1.sh` or `sh build_multiplier_option_2.sh` to compile the circuit and keys.
+Run `sh build_multiplier_option_1.sh`, only to compile the circuit and for build the witness. We will get two witness result, the first one will be a successful witness (we are using correct values in the input_success.json file), but the second witness build will be wrong (because we are using a wrong values in the input_wrong.json file).
 
-Each of these will create a `build` directory inside (which will be created if it doesn't already exist). Inside this directory, the build process will create `r1cs` and `wasm` files for witness generation, as well as a `zkey` file (proving and verifying keys). Note that this process will take several minutes.
+When you run`sh build_multiplier_option_2.sh` to compile the circuit and keys the result will be successful. This will create a `build` directory inside (which will be created if it doesn't already exist). Inside this directory, the build process will create `r1cs` and `wasm` files for witness generation, as well as a `zkey` file (proving and verifying keys). Note that this process will take several minutes.
 
 ## Using Node in the `proofusingnode` directory
 ```
