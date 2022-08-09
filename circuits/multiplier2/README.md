@@ -1,4 +1,4 @@
-# Multiplier circuit
+# Multiplier2 circuit
 
 The purpose of this circuit is to allow us to prove to someone that we’re able to factor an integer *c*. Specifically, using this circuit we’ll be able to prove that we know two numbers (*a* and *b*) that multiply together to give *c*, without revealing *a* and *b*.
 
